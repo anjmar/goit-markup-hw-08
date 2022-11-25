@@ -1,0 +1,21 @@
+.header {
+  @media screeen and (min-width: 480px) {
+    height: 60px;
+  }
+  @media screeen and (min-width: 768px) {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+  }
+  @media screeen and (min-width: 1200px) {
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+  }
+}

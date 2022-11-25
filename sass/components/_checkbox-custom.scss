@@ -1,0 +1,15 @@
+.checkbox-custom {
+  position: relative;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 1px solid #212121;
+  cursor: pointer;
+  transition: border-color var(--trns-fast), background-color var(--trns-fast);
+}
+.checkbox-custom__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: var(--white-text-color);
+}

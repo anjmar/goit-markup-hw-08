@@ -1,0 +1,16 @@
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and(max-width: 1199px) {
+    max-width: 450px;
+  }
+  @media screen and(min-width: $desktop) {
+    max-width: 570px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}

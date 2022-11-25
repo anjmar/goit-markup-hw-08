@@ -1,0 +1,14 @@
+.buttons-set {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.buttons-set__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 14px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

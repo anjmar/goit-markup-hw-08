@@ -1,0 +1,38 @@
+.form-checkbox {
+  margin-bottom: 30px;
+}
+.form-checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  align-items: center;
+  justify-content: center;
+
+  &:checked + .form-checkbox__label .checkbox-custom {
+    border-color: transparent;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+}
+.form-checkbox__label {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
+}
+.form-checkbox__link {
+  padding-left: 3px;
+  color: #2196f3;
+}

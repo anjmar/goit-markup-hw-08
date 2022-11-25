@@ -1,0 +1,25 @@
+.link {
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    transition: color var(--trns-fast);
+  }
+
+  &--white {
+    color: var(--white-text-color);
+  }
+
+  &--hover-bg:hover,
+  &--hover-bg:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-background-color);
+  }
+  &--hover-border:hover,
+  &--hover-icon:hover,
+  &--hover-icon:focus {
+    fill: var(--accent-text-color);
+    border-color: var(--accent-background-color);
+  }
+}

@@ -1,0 +1,100 @@
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  text-align: center;
+  background-color: #c4c4c4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(49, 47, 58, 0.4),
+      rgba(49, 47, 58, 0.4)
+    ),
+    url(../images/adaptive-img/img_sm@1x-min.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(49, 47, 58, 0.4),
+        rgba(49, 47, 58, 0.4)
+      ),
+      url(../images/adaptive-img/img_sm@2x-min.jpg);
+  }
+  // tablet screen
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(49, 47, 58, 0.4),
+        rgba(49, 47, 58, 0.4)
+      ),
+      url(../images/adaptive-img/img_md@1x-min.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(49, 47, 58, 0.4),
+        rgba(49, 47, 58, 0.4)
+      ),
+      url(../images/adaptive-img/img_md@2x-min.jpg);
+  }
+
+  // desktop screen
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        rgba(49, 47, 58, 0.4),
+        rgba(49, 47, 58, 0.4)
+      ),
+      url(../images/adaptive-img/Img_lrg@1x-min.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(49, 47, 58, 0.4),
+        rgba(49, 47, 58, 0.4)
+      ),
+      url(../images/adaptive-img/Img_lrg@2x-min.jpg);
+  }
+}
+
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+
+//     background-image: url();
+//   }
+
+.hero__title {
+  margin: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 60%;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+.hero__button {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 24px;
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px 32px;
+  }
+}

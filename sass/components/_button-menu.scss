@@ -1,0 +1,35 @@
+.button-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    cursor: pointer;
+  }
+  &__icon-cross {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.button-menu.is-open .button-menu__icon-cross {
+  display: block;
+}
+.button-menu.is-open .button-menu__icon-menu {
+  display: none;
+}
+.button-menu.button-menu__icon-cross:hover,
+.button-menu .button-menu__icon-cross:focus {
+  fill: var(--accent-text-color);
+}
