@@ -1,10 +1,10 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  height: 600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // max-width: 480px;
+  height: 400px;
   text-align: center;
   background-color: #c4c4c4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -28,6 +28,8 @@
   }
   // tablet screen
   @media screen and (min-width: $tablet) {
+    // max-width: 768px;
+    // height: 400px;
     background-image: linear-gradient(
         rgba(49, 47, 58, 0.4),
         rgba(49, 47, 58, 0.4)
@@ -46,6 +48,10 @@
 
   // desktop screen
   @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         rgba(49, 47, 58, 0.4),
         rgba(49, 47, 58, 0.4)
@@ -62,7 +68,6 @@
       url(../images/adaptive-img/Img_lrg@2x-min.jpg);
   }
 }
-
 .hero__title {
   margin: auto;
   font-weight: 900;
